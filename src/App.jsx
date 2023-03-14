@@ -4,12 +4,14 @@ import { Routes, Route } from 'react-router-dom';
 
 import PersonalizedPage from './pages/PersonalizedPage';
 import BottomNav from './component/BottomNav';
+import HeartFace from './component/HeartFace';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="w-full max-w-xl mx-auto">
+      <HeartFace />
       <Routes>
         <Route path="/invitation/:id" element={<PersonalizedPage />} />
       </Routes>
