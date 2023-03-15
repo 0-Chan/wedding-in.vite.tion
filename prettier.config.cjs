@@ -8,4 +8,5 @@ module.exports = {
   importOrder: ['^react/(.*)$', '^[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
+  plugins: [require('prettier-plugin-tailwindcss')],
 };
