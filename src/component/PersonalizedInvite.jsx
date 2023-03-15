@@ -1,8 +1,7 @@
 import { useParams } from 'react-router-dom';
 
-const PersonalizedPage = () => {
+const PersonalizedInvite = () => {
   const { id } = useParams();
-  console.log('🚀 | id:', id);
 
   return (
     <>
@@ -15,4 +14,4 @@ const PersonalizedPage = () => {
   );
 };
 
-export default PersonalizedPage;
+export default PersonalizedInvite;

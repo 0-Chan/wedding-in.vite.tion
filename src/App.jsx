@@ -1,12 +1,11 @@
 import { Suspense } from 'react';
 
 import { Routes, Route } from 'react-router-dom';
+import { PacmanLoader } from 'react-spinners';
 
-import PersonalizedPage from './pages/PersonalizedPage';
+import PersonalizedInvite from './component/PersonalizedInvite';
 import BottomNav from './component/BottomNav';
 import GreetingConfetti from './component/GreetingConfetti';
-
-import { PacmanLoader } from 'react-spinners';
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
       <div className="mx-auto w-full max-w-xl">
         <GreetingConfetti />
         <Routes>
-          <Route path="/invitation/:id" element={<PersonalizedPage />} />
+          <Route path="/invitation/:id" element={<PersonalizedInvite />} />
         </Routes>
         <BottomNav />
       </div>
