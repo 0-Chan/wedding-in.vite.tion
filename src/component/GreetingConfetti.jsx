@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 
-const HeartFace = () => {
+const GreetingConfetti = () => {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -123,4 +123,4 @@ const HeartFace = () => {
   );
 };
 
-export default HeartFace;
+export default GreetingConfetti;
