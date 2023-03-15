@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #fef9c3;
+  background-image: url('/public/handmade-paper.png');
+}
