@@ -110,7 +110,7 @@ const HeartFace = () => {
                 {
                   fill: true,
                   font: 'Verdana',
-                  value: ['😍', '😊', '😻'],
+                  value: ['😍', '🌸', '🌼', '🐱'],
                   style: '',
                   weight: 400,
                 },
