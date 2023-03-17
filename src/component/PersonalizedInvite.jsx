@@ -4,13 +4,10 @@ const PersonalizedInvite = () => {
   const { id } = useParams();
 
   return (
-    <>
-      <h1>Welcome to personalized page!</h1>
-      <p>
-        Nice to meet you,
-        {id}
-      </p>
-    </>
+    <div className="my-4 text-center">
+      <h2>어려운 시기에 블라블라</h2>
+      <p>{id} 님을 꼭 모시고 싶습니다.</p>
+    </div>
   );
 };
 
