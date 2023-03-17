@@ -43,9 +43,6 @@ const BottomNav = () => {
           )
         }
       >
-        {/* {({ isActive, isPending }) =>
-          isPending ? 'pending' : isActive ? 'active' : ''
-        } */}
         <svg
           className="h-8 w-8"
           fill="none"

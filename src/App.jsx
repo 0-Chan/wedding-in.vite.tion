@@ -16,6 +16,7 @@ function App() {
           <Route path="/invitation/:id" element={ <HomePage />} />
           <Route path="/guest-book" element={ <PersonalizedInvite /> } />
           <Route path="/map" element={ <PersonalizedInvite /> } />
+          <Route path="*" element={ <HomePage /> } />
         </Routes>
         <BottomNav />
       </div>
