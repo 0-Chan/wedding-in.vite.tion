@@ -4,13 +4,10 @@ import { loadFull } from 'tsparticles';
 
 const GreetingConfetti = () => {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
+  const particlesLoaded = useCallback(async (container) => {}, []);
 
   return (
     <Particles
@@ -47,7 +44,7 @@ const GreetingConfetti = () => {
               top: 'none',
               default: 'destroy',
             },
-            speed: { min: 25, max: 70 },
+            speed: { min: 25, max: 90 },
           },
           number: {
             value: 0,
@@ -79,7 +76,7 @@ const GreetingConfetti = () => {
             },
           },
           size: {
-            value: 8,
+            value: 12,
           },
           roll: {
             darken: {
