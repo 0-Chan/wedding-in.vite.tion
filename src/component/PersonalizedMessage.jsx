@@ -1,4 +1,8 @@
-const InviteMessage = () => {
+import { useParams } from 'react-router-dom';
+
+const PersonalizedMessage = () => {
+  const { id } = useParams();
+
   return (
     <section className="lead text-center text-lg leading-10">
       <p>
@@ -6,10 +10,10 @@ const InviteMessage = () => {
         <br />
         둘의 인연이 결혼하여 부부가 됩니다.
         <br />
-        저희의 새로운 시작을 축복 해주시면 감사하겠습니다.
+        {id}님을 초대하여 새로운 시작을 축복 해주시면 감사하겠습니다.
       </p>
     </section>
   );
 };
 
-export default InviteMessage;
+export default PersonalizedMessage;
