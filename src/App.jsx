@@ -12,10 +12,10 @@ function App() {
     <Suspense fallback={<PacmanLoader color="#F7CB17" />}>
       <div className="mx-auto w-full max-w-xl border-2">
         <Routes>
-          <Route path="/invitation/" element={<HomePage />} />
-          <Route path="/invitation/:id" element={<HomePage />} />
-          <Route path="/guest-book" element={<PersonalizedInvite />} />
-          <Route path="/map" element={<PersonalizedInvite />} />
+          <Route path="/invitation/" element={ <HomePage /> } />
+          <Route path="/invitation/:id" element={ <HomePage />} />
+          <Route path="/guest-book" element={ <PersonalizedInvite /> } />
+          <Route path="/map" element={ <PersonalizedInvite /> } />
         </Routes>
         <BottomNav />
       </div>
