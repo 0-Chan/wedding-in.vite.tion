@@ -5,7 +5,8 @@ import PersonalizedMessage from '../component/PersonalizedMessage';
 import InviteMessage from '../component/InviteMessage';
 
 import waveHand from '../assets/waveHand.gif';
-import proposal from '../assets/proposal.png';
+import flower from '../assets/flower.png';
+
 const HomePage = () => {
   const { id } = useParams();
 
@@ -33,11 +34,7 @@ const HomePage = () => {
           <span>을지로 PJ호텔 뮤즈홀</span>
         </p>
       </div>
-      <img
-        src={proposal}
-        alt="Wedding ring icon"
-        className="mx-auto mt-2 h-20 w-20"
-      />
+      <img src={flower} className="mx-auto mt-2 h-20 w-28" />
       {id ? <PersonalizedMessage /> : <InviteMessage />}
       <div className="mt-16 text-center">{remainDays}일 후에 만나요~!</div>
     </>
