@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import { PacmanLoader } from 'react-spinners';
 
 import HomePage from './pages/HomePage';
+import GuestbookPage from './pages/GuestbookPage';
 import InviteMessage from './component/InviteMessage';
 import BottomNav from './component/BottomNav';
 
@@ -14,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/invitation/" element={<HomePage />} />
           <Route path="/invitation/:id" element={<HomePage />} />
-          <Route path="/guest-book" element={<InviteMessage />} />
+          <Route path="/guest-book" element={<GuestbookPage />} />
           <Route path="/map" element={<InviteMessage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>

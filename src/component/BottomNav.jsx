@@ -4,7 +4,7 @@ import { cls } from '../libs/utils';
 const BottomNav = () => {
   return (
     // TODO: 배포 후 안드로이드 화면에서 nav 바닥에 잘 붙어있는지 확인
-    <nav className="sticky bottom-0 flex w-full max-w-xl justify-between border-t bg-white/90 px-10 pb-2 pt-3 text-xs text-gray-700">
+    <nav className="sticky bottom-0 z-50 flex w-full max-w-xl justify-between border-t bg-white/90 px-10 pb-2 pt-3 text-xs text-gray-700">
       <NavLink
         to="/guest-book"
         className={({ isActive }) =>
