@@ -1,7 +1,12 @@
-import { useParams } from 'react-router-dom';
+import Footer from '../component/Footer';
 
 const GuestbookPage = () => {
-  return <div>guestbook</div>;
+  return (
+    <>
+      guestbook
+      <Footer />
+    </>
+  );
 };
 
 export default GuestbookPage;
