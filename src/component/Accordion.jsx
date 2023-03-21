@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-function Accordion({ title, children }) {
-  const [isOpen, setIsOpen] = useState(false);
+function Accordion({ title, children, open = false }) {
+  const [isOpen, setIsOpen] = useState(open);
 
   const handleToggle = () => setIsOpen(!isOpen);
 
