@@ -6,7 +6,7 @@ import InviteMessage from '../component/InviteMessage';
 import WeddingGallery from '../component/WeddingGallery';
 import Footer from '../component/Footer';
 
-import waveHand from '../assets/waveHand.gif';
+import wavingHand from '../assets/wavingHand.gif';
 import flower1 from '../assets/flower.png';
 import flower2 from '../assets/flower2.png';
 import Accordion from '../component/Accordion';
@@ -29,7 +29,7 @@ const HomePage = () => {
         </h1>
         <div className="mx-4 drop-shadow-lg">
           <img
-            src={waveHand}
+            src={wavingHand}
             alt="윤지와 영찬이 손을 흔든다."
             className="mx-auto scale-90 rounded-lg"
           />
