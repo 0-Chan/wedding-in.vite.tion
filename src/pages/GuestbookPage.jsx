@@ -9,7 +9,7 @@ const GuestbookPage = () => {
     <>
       <div className="mb-4 text-center">
         <h1 className="mt-5 font-italianno text-2xl font-thin">Guest Book</h1>
-        <h2 className="font-nanumMyeongjo text-3xl">방명록</h2>
+        <h2 className="font-gowunDodum text-2xl">방명록</h2>
         <p className="mt-4 font-nanumMyeongjo text-lg">
           신혼 부부가 전하는 메세지에요.
         </p>

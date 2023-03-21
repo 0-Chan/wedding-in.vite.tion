@@ -1,4 +1,4 @@
-import ShowKakaoMap from '../component/ShowKakaoMap';
+import PinnedKakaoMap from '../component/PinnedKakaoMap';
 import Footer from '../component/Footer';
 
 import navermapIcon from '../assets/navermapIcon.png';
@@ -9,30 +9,32 @@ const MapPage = () => {
   return (
     <>
       <div className="mb-4 text-center">
-        <h1 className="mt-5 font-italianno text-4xl font-thin">Map</h1>
-        <h2 className="text-2xl">오시는 길</h2>
-        <p className="mt-4 text-lg">호텔PJ 1층 뮤즈홀</p>
-        <p className="text-sm text-gray-500">서울 중구 마른내로 71</p>
+        <h1 className="mt-5 font-italianno text-2xl font-thin">Map</h1>
+        <h2 className="font-gowunDodum text-2xl">오시는 길</h2>
+        <p className="mt-4 font-nanumMyeongjo text-lg">호텔PJ 1층 뮤즈홀</p>
+        <p className="font-nanumMyeongjo text-base text-gray-500">
+          서울 중구 마른내로 71
+        </p>
       </div>
 
-      <ShowKakaoMap />
+      <PinnedKakaoMap />
       <div className="p-4">
-        <h3 className="text-xl font-bold text-orange-400">- 지하철</h3>
-        <p>
-          <span className="">을지로4가역, 을지로3가역, 충무로역</span>
+        <h3 className="font-gowunDodum text-xl text-orange-500">- 지하철</h3>
+        <p className="font-nanumMyeongjo text-lg">
+          을지로4가역, 을지로3가역, 충무로역
           <br />
-          도보 5분 소요
+          <span className="text-sm">(도보 5분 소요)</span>
         </p>
-        <h3 className="mt-4 text-lg font-bold text-orange-400">
+        <h3 className="mt-6 font-gowunDodum text-xl text-orange-500">
           - 지도 앱으로 찾기
         </h3>
-        <p>선호하시는 앱으로 길찾기 기능을 사용하세요.</p>
-        <div className="my-3 flex justify-evenly text-sm">
+        <p className="font-nanumMyeongjo">선호하시는 앱의 길찾기를 써보세요.</p>
+        <div className="my-3 flex justify-evenly font-gowunDodum text-sm">
           <a
             href="https://naver.me/xXrn9Zw0"
             className="rounded-xl bg-gray-50 px-6 py-2"
           >
-            <img src={navermapIcon} className="mx-auto h-7 w-8" />
+            <img src={navermapIcon} className="mx-auto h-7 w-7" />
             네이버지도
           </a>
           <a
@@ -50,11 +52,15 @@ const MapPage = () => {
             티맵
           </a>
         </div>
-        <h3 className="mt-4 text-lg font-bold text-orange-400">- 주차 안내</h3>
-        <p>
+        <h3 className="mt-6 font-gowunDodum text-xl text-orange-500">
+          - 주차 안내
+        </h3>
+        <p className="font-nanumMyeongjo text-lg">
           <strong>PJ호텔 정문</strong>으로 오시면 호텔 직원이
           <br />
-          주차장 위치를 안내 해드립니다!
+          <span className="mt-2 inline-block">
+            주차장 위치를 안내 해드립니다!
+          </span>
         </p>
       </div>
       <Footer />

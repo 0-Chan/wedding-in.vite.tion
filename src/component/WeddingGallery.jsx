@@ -1,8 +1,7 @@
 import { useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Grid, Pagination, Navigation } from 'swiper';
-// import SwiperCore, { EffectCoverflow, Navigation, Autoplay } from 'swiper';
+import { Grid, Pagination, Navigation } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/grid';
@@ -133,7 +132,7 @@ const WeddingGallery = () => {
 
   return (
     <>
-      <div className="bg-gray-50 py-6 shadow-inner">
+      <div className="bg-gray-50 pt-4 pb-7 shadow-inner">
         <h3 className="font-italianno text-4xl">Photos</h3>
         <div className="flex items-center justify-center text-center">
           <Swiper

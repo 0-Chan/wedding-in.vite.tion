@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 const { kakao } = window;
 
-const ShowKakaoMap = () => {
+const PinnedKakaoMap = () => {
   const mapCenterPosition = new kakao.maps.LatLng(37.56446, 126.995329);
   const weddingHallPosition = new kakao.maps.LatLng(37.564799, 126.995715);
 
@@ -34,9 +34,9 @@ const ShowKakaoMap = () => {
 
   return (
     <div className="border border-orange-300">
-      <div id="mapCanvas" className="h-96 w-full" />
+      <div id="mapCanvas" className="h-80 w-full" />
     </div>
   );
 };
 
-export default ShowKakaoMap;
+export default PinnedKakaoMap;

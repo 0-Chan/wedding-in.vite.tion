@@ -22,9 +22,9 @@ const HomePage = () => {
     <>
       <GreetingConfetti />
       <div className="text-center">
-        <h1 className="mt-5 font-sunflower text-3xl">
+        <h1 className="mt-8 font-gowunDodum text-3xl">
           신윤지
-          <span className="mx-5 my-auto text-base">&</span>
+          <span className="mx-5 my-auto text-lg">&</span>
           김영찬
         </h1>
         <div className="mx-4 drop-shadow-lg">
@@ -33,19 +33,19 @@ const HomePage = () => {
             alt="윤지와 영찬이 손을 흔든다."
             className="mx-auto scale-90 rounded-lg"
           />
-          <p className="font font-nanumMyeongjo text-xl leading-8">
+          <p className="font-nanumMyeongjo text-xl leading-8">
             2023년 4월 15일(토) 1시 30분
             <br />
             호텔PJ 뮤즈홀
           </p>
         </div>
-        <img src={flower1} className="mx-auto mt-2 h-20 w-28" />
+        <img src={flower1} className="mx-auto h-20 w-28" />
         {id ? <PersonalizedMessage /> : <InviteMessage />}
         <WeddingGallery />
-        <div className="mt-8 font-sunflower text-xl">
+        <div className="mt-8 font-gowunDodum text-xl">
           {remainDays}일 후에 만나요~!
         </div>
-        <img src={flower2} className="mx-auto mt-2 h-20 w-28" />
+        <img src={flower2} className="mx-auto h-20 w-28" />
         <p>
           혹시 참석이 힘드신 분을 위해
           <br />
