@@ -133,74 +133,76 @@ const WeddingGallery = () => {
 
   return (
     <>
-      <h3>저희의 스튜디오 웨딩 사진</h3>
-      <div className="flex items-center justify-center text-center">
-        <Swiper
-          slidesPerView={3}
-          grid={{
-            rows: 3,
-            fill: 'row',
-          }}
-          spaceBetween={20}
-          pagination={{ clickable: true }}
-          navigation={true}
-          modules={[Grid, Pagination, Navigation]}
-        >
-          {images.map((image, index) => (
-            <SwiperSlide key={image.id}>
-              <img
-                src={image.thumbnail}
-                alt="wedding picture"
-                onClick={() => openzoomSlide(index)}
-                className="rounded-lg"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-
-      {zoomSlideIsOpen && (
-        <div
-          className="fixed top-[45%] left-1/2 z-40 max-w-md -translate-x-1/2 -translate-y-1/2 rounded-md bg-gray-400/50 drop-shadow-sm"
-          onClick={closezoomSlide}
-        >
-          <button
-            className="absolute -top-6 right-5 rounded-full bg-gray-300/50"
-            onClick={closezoomSlide}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
+      <div className="bg-gray-50 py-6 shadow-inner">
+        <h3 className="font-italianno text-4xl">Photos</h3>
+        <div className="flex items-center justify-center text-center">
           <Swiper
-            spaceBetween={10}
-            pagination={{ type: 'fraction' }}
-            modules={[Pagination]}
-            onSlideChange={(swiper) => setzoomSlideIndex(swiper.activeIndex)}
-            initialSlide={zoomSlideIndex}
-            autoHeight
+            slidesPerView={3}
+            grid={{
+              rows: 3,
+              fill: 'row',
+            }}
+            spaceBetween={20}
+            pagination={{ clickable: true }}
+            navigation={true}
+            modules={[Grid, Pagination, Navigation]}
           >
-            {images.map((image) => (
+            {images.map((image, index) => (
               <SwiperSlide key={image.id}>
-                <div className="z-50">
-                  <img src={image.src} alt="wedding picture" />
-                </div>
+                <img
+                  src={image.thumbnail}
+                  alt="wedding picture"
+                  onClick={() => openzoomSlide(index)}
+                  className="rounded-lg"
+                />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-      )}
+
+        {zoomSlideIsOpen && (
+          <div
+            className="fixed top-[45%] left-1/2 z-40 max-w-md -translate-x-1/2 -translate-y-1/2 rounded-md bg-gray-400/50 drop-shadow-sm"
+            onClick={closezoomSlide}
+          >
+            <button
+              className="absolute -top-6 right-5 rounded-full bg-gray-300/50"
+              onClick={closezoomSlide}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <Swiper
+              spaceBetween={10}
+              pagination={{ type: 'fraction' }}
+              modules={[Pagination]}
+              onSlideChange={(swiper) => setzoomSlideIndex(swiper.activeIndex)}
+              initialSlide={zoomSlideIndex}
+              autoHeight
+            >
+              {images.map((image) => (
+                <SwiperSlide key={image.id}>
+                  <div className="z-50">
+                    <img src={image.src} alt="wedding picture" />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        )}
+      </div>
     </>
   );
 };

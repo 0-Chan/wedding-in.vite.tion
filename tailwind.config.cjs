@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       italianno: 'Italianno',
       nanumMyeongjo: 'Nanum Myeongjo',
+      sunflower: 'Sunflower',
     },
     extend: {
       colors: {

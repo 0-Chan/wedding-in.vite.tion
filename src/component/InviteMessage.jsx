@@ -1,6 +1,6 @@
 const InviteMessage = () => {
   return (
-    <section className="lead text-center text-lg leading-10">
+    <section className="mb-6 text-center font-nanumMyeongjo text-lg leading-10">
       <p>
         한 보드게임 모임에서 시작된
         <br />

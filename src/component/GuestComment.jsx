@@ -1,16 +1,12 @@
 const GuestComment = ({ writer, children, date }) => {
   return (
     <>
-      <div className="mt-4 rounded-lg bg-gray-50 py-4 px-5 font-nanumMyeongjo backdrop:mx-4">
-        <div className="border-orange-150 border-b-2 pb-3">
+      <div className="mx-auto mt-4 w-11/12 rounded-2xl bg-gray-50 p-4 font-nanumMyeongjo">
+        <div className="border-orange-150 border-b-2 pb-2">
           <span>from.</span> <span>{writer}</span>
         </div>
-        <div className="font-base mt-4 leading-5 text-amber-600">
-          {children}
-        </div>
-        <div className="mt-3 text-right text-sm font-thin text-gray-700">
-          {date}
-        </div>
+        <div className="mt-2 text-lg leading-7 text-amber-600">{children}</div>
+        <div className="text-right text-sm font-thin text-gray-700">{date}</div>
       </div>
     </>
   );
