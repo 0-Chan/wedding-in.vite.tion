@@ -9,7 +9,7 @@ const MapPage = () => {
   return (
     <>
       <div className="mb-4 text-center">
-        <h1 className="mt-5 text-base">Map</h1>
+        <h1 className="mt-5 font-italianno text-4xl font-thin">Map</h1>
         <h2 className="text-2xl">오시는 길</h2>
         <p className="mt-4 text-lg">호텔PJ 1층 뮤즈홀</p>
         <p className="text-sm text-gray-500">서울 중구 마른내로 71</p>

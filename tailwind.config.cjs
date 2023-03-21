@@ -2,6 +2,10 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      italianno: 'Italianno',
+      nanumMyeongjo: 'Nanum Myeongjo',
+    },
     extend: {
       colors: {
         'metro-line-2': '#10aa18',
