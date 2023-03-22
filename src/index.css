@@ -9,7 +9,7 @@
 
 body {
   background-color: #ffffff;
-  background-image: url('/public/paperTexture.png');
+  background-image: url('/paperTexture.png');
 }
 
 .swiper-slide {

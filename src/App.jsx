@@ -6,6 +6,7 @@ import { PacmanLoader } from 'react-spinners';
 import HomePage from './pages/HomePage';
 import GuestbookPage from './pages/GuestbookPage';
 import MapPage from './pages/MapPage';
+import SharePage from './pages/SharePage';
 import BottomNav from './component/BottomNav';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/invitation/:id" element={<HomePage />} />
           <Route path="/guest-book" element={<GuestbookPage />} />
           <Route path="/map" element={<MapPage />} />
+          <Route path="/share" element={<SharePage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
         <BottomNav />
