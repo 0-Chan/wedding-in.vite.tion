@@ -8,7 +8,7 @@ import 'swiper/css/grid';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const imageDir = 'src/assets/gallery/';
+const imageDir = '/photos/';
 const images = [
   {
     id: 1,
