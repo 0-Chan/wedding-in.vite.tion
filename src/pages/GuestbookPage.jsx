@@ -3,7 +3,7 @@ import Accordion from '../component/Accordion';
 import AccordionContent from '../component/AccordionContent';
 import Footer from '../component/Footer';
 
-import milkTheCat from '../assets/milkTheCat.jpg';
+import milkTheCat from '../assets/milkTheCat.webp';
 
 import { husbandPrivateInfo, wifePrivateInfo } from '../privateInfo';
 

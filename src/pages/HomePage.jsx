@@ -12,9 +12,9 @@ import WeddingGallery from '../component/WeddingGallery';
 import AccordionContent from '../component/AccordionContent';
 import Footer from '../component/Footer';
 
-import wavingHand from '../assets/wavingHand.gif';
-import flower1 from '../assets/flower.png';
-import flower2 from '../assets/flower2.png';
+import wavingHand from '../assets/wavingHand.webp';
+import flower1 from '../assets/flower.webp';
+import flower2 from '../assets/flower2.webp';
 import Accordion from '../component/Accordion';
 
 import { husbandPrivateInfo, wifePrivateInfo } from '../privateInfo';
