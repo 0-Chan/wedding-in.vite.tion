@@ -95,8 +95,8 @@ const HomePage = () => {
               text={husbandPrivateInfo.fatherAccount.replaceAll('-', '')}
               onCopy={() => notify('혼주 계좌가')}
             >
-              <button className="rounded-md bg-gray-50 px-3 py-1 text-lg shadow-lg">
-                복사하기
+              <button className="rounded-md bg-gray-50 px-1.5 py-2 text-sm shadow-lg">
+                복사
               </button>
             </CopyToClipboard>
           </AccordionContent>
@@ -108,8 +108,8 @@ const HomePage = () => {
               text={husbandPrivateInfo.motherAccount.replaceAll('-', '')}
               onCopy={() => notify('혼주 계좌가')}
             >
-              <button className="rounded-md bg-gray-50 px-3 py-1 text-lg shadow-lg">
-                복사하기
+              <button className="rounded-md bg-gray-50 px-1.5 py-2 text-sm shadow-lg">
+                복사
               </button>
             </CopyToClipboard>
           </AccordionContent>
@@ -121,8 +121,8 @@ const HomePage = () => {
               text={husbandPrivateInfo.husbandAccount.replaceAll('-', '')}
               onCopy={() => notify('신랑 계좌가')}
             >
-              <button className="rounded-md bg-gray-50 px-3 py-1 text-lg shadow-lg">
-                복사하기
+              <button className="rounded-md bg-gray-50 px-1.5 py-2 text-sm shadow-lg">
+                복사
               </button>
             </CopyToClipboard>
           </AccordionContent>
@@ -136,8 +136,8 @@ const HomePage = () => {
               text={wifePrivateInfo.fatherAccount.replaceAll('-', '')}
               onCopy={() => notify('혼주 계좌가')}
             >
-              <button className="rounded-md bg-gray-50 px-3 py-1 text-lg shadow-lg">
-                복사하기
+              <button className="rounded-md bg-gray-50 px-1.5 py-2 text-sm shadow-lg">
+                복사
               </button>
             </CopyToClipboard>
           </AccordionContent>
@@ -149,8 +149,8 @@ const HomePage = () => {
               text={wifePrivateInfo.motherAccount.replaceAll('-', '')}
               onCopy={() => notify('혼주 계좌가')}
             >
-              <button className="rounded-md bg-gray-50 px-3 py-1 text-lg shadow-lg">
-                복사하기
+              <button className="rounded-md bg-gray-50 px-1.5 py-2 text-sm shadow-lg">
+                복사
               </button>
             </CopyToClipboard>
           </AccordionContent>
@@ -162,8 +162,8 @@ const HomePage = () => {
               text={wifePrivateInfo.wifeAccount.replaceAll('-', '')}
               onCopy={() => notify('신부 계좌가')}
             >
-              <button className="rounded-md bg-gray-50 px-3 py-1 text-lg shadow-lg">
-                복사하기
+              <button className="rounded-md bg-gray-50 px-1.5 py-2 text-sm shadow-lg">
+                복사
               </button>
             </CopyToClipboard>
           </AccordionContent>
