@@ -59,7 +59,7 @@ const MapPage = () => {
           <strong>PJ호텔 정문</strong>으로 오시면 호텔 직원이
           <br />
           <span className="mt-2 inline-block">
-            주차장 위치를 안내 해드립니다!
+            주차장 위치를 안내해드립니다!
           </span>
         </p>
       </div>
