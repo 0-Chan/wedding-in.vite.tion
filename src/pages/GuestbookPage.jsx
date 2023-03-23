@@ -5,32 +5,38 @@ import Footer from '../component/Footer';
 
 import milkTheCat from '../assets/milkTheCat.webp';
 
+import messageInfo from '../messageInfo';
 import { husbandPrivateInfo, wifePrivateInfo } from '../privateInfo';
 
 const GuestbookPage = () => {
   return (
     <>
       <div className="mb-4 text-center">
-        <h1 className="mt-5 font-italianno text-2xl font-thin">Guest Book</h1>
-        <h2 className="font-gowunDodum text-2xl">방명록</h2>
+        <h1 className="mt-5 font-italianno text-2xl font-thin">Message</h1>
+        <h2 className="font-gowunDodum text-2xl">메시지</h2>
         <p className="mt-4 font-nanumMyeongjo text-lg">
-          신혼 부부가 전하는 메세지에요.
+          청첩장을 받으신 분들께 먼저 감사의 말씀을 드립니다.
         </p>
       </div>
-      <GuestComment writer="신윤지 (신부)" date="23-03-22">
-        잊지 않고 진심 어린 마음으로 축하해주신 모든 분께 감사드립니다. 보내주신
-        축복과 진심들로 세상의 밝은 구석이나마 될 수 있도록 행복하게 살겠습니다.
+      <GuestComment
+        writer={messageInfo[0].writer}
+        relationship={messageInfo[0].relationship}
+        date="23-03-22"
+      >
+        {messageInfo[0].message}
       </GuestComment>
-      <GuestComment writer="김영찬 (신랑)" date="23-03-23">
-        코로나-19가 끝나 행사가 몰리는 시기에 결혼하게 되어 송구스러운 마음이
-        있습니다. 부디 귀한 시간 내주셔서 방문 해주시면 정말 감사하겠습니다!
+      <GuestComment
+        writer={messageInfo[1].writer}
+        relationship={messageInfo[0].relationship}
+        date="23-03-23"
+      >
+        {messageInfo[1].message}
       </GuestComment>
       <GuestComment writer="우유 (집 고양이)" date="23-03-24">
-        <img src={milkTheCat} className="inline-block w-32" />
+        <img src={milkTheCat} className="inline-block w-32 rounded-md" />
         (메옹)
       </GuestComment>
 
-      {/* TODO: <a> tag 전화 걸리는지 확인 */}
       <div className="mt-4">
         <Accordion title="📞 번호로 연락하기" open>
           <AccordionContent

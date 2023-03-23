@@ -93,7 +93,7 @@ const HomePage = () => {
           >
             <CopyToClipboard
               text={husbandPrivateInfo.fatherAccount.replaceAll('-', '')}
-              onCopy={() => notify('혼주 계좌가')}
+              onCopy={() => notify('신랑 아버지 계좌가')}
             >
               <button className="rounded-md bg-gray-50 px-1.5 py-2 text-sm shadow-lg">
                 복사
@@ -106,7 +106,7 @@ const HomePage = () => {
           >
             <CopyToClipboard
               text={husbandPrivateInfo.motherAccount.replaceAll('-', '')}
-              onCopy={() => notify('혼주 계좌가')}
+              onCopy={() => notify('신랑 어머니 계좌가')}
             >
               <button className="rounded-md bg-gray-50 px-1.5 py-2 text-sm shadow-lg">
                 복사
@@ -130,11 +130,11 @@ const HomePage = () => {
         <Accordion title="👰 신부 측 계좌번호">
           <AccordionContent
             individual={'혼주 ' + wifePrivateInfo.fatherName}
-            info={'국민은행 ' + wifePrivateInfo.fatherAccount}
+            info={'경남은행 ' + wifePrivateInfo.fatherAccount}
           >
             <CopyToClipboard
               text={wifePrivateInfo.fatherAccount.replaceAll('-', '')}
-              onCopy={() => notify('혼주 계좌가')}
+              onCopy={() => notify('신부 아버지 계좌가')}
             >
               <button className="rounded-md bg-gray-50 px-1.5 py-2 text-sm shadow-lg">
                 복사
@@ -143,11 +143,11 @@ const HomePage = () => {
           </AccordionContent>
           <AccordionContent
             individual={'혼주 ' + wifePrivateInfo.motherName}
-            info={'국민은행 ' + wifePrivateInfo.motherAccount}
+            info={'농협 ' + wifePrivateInfo.motherAccount}
           >
             <CopyToClipboard
               text={wifePrivateInfo.motherAccount.replaceAll('-', '')}
-              onCopy={() => notify('혼주 계좌가')}
+              onCopy={() => notify('신부 어머니 계좌가')}
             >
               <button className="rounded-md bg-gray-50 px-1.5 py-2 text-sm shadow-lg">
                 복사
