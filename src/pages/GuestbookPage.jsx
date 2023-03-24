@@ -15,7 +15,9 @@ const GuestbookPage = () => {
         <h1 className="mt-5 font-italianno text-2xl font-thin">Message</h1>
         <h2 className="font-gowunDodum text-2xl">메시지</h2>
         <p className="mt-4 font-nanumMyeongjo text-lg">
-          청첩장을 받으신 분들께 먼저 감사의 말씀을 드립니다.
+          청첩장을 받으신 분들께
+          <br />
+          먼저 감사의 말씀을 드립니다.
         </p>
       </div>
       <GuestComment
