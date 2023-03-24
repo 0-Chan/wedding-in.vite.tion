@@ -27,7 +27,7 @@ const GreetingConfetti = () => {
             y: 87,
           },
           rate: {
-            quantity: 16,
+            quantity: 10,
             delay: 100,
           },
         },
@@ -44,7 +44,7 @@ const GreetingConfetti = () => {
               top: 'none',
               default: 'destroy',
             },
-            speed: { min: 25, max: 90 },
+            speed: { min: 25, max: 80 },
           },
           number: {
             value: 0,
@@ -104,7 +104,7 @@ const GreetingConfetti = () => {
                 {
                   fill: true,
                   font: 'Verdana',
-                  value: ['😍', '🌸', '🌼', '🐱'],
+                  value: ['😍', '🌸', '🌼'],
                   style: '',
                   weight: 400,
                 },

@@ -27,12 +27,16 @@ const GuestbookPage = () => {
       </GuestComment>
       <GuestComment
         writer={messageInfo[1].writer}
-        relationship={messageInfo[0].relationship}
+        relationship={messageInfo[1].relationship}
         date="23-03-23"
       >
         {messageInfo[1].message}
       </GuestComment>
-      <GuestComment writer="우유 (집 고양이)" date="23-03-24">
+      <GuestComment
+        writer="우유"
+        relationship="(집 고양이)"
+        date="23-03-24"
+      >
         <img src={milkTheCat} className="inline-block w-32 rounded-md" />
         (메옹)
       </GuestComment>
