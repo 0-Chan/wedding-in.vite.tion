@@ -60,8 +60,9 @@ const HomePage = () => {
           </p>
           <p className="mt-4 font-gowunDodum">
             <span className="text-sm">
-              (베드로)&nbsp;&nbsp;&nbsp;(데레사)
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(다윗)&nbsp;
+              <em className="">(베드로)</em>
+              <em className="pl-3">(데레사)</em>
+              <em className="pl-14 pr-1">(다윗)</em>
             </span>
             <br />
             {husbandPrivateInfo.fatherName} · {husbandPrivateInfo.motherName}
