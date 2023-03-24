@@ -59,6 +59,11 @@ const HomePage = () => {
             호텔PJ 뮤즈홀
           </p>
           <p className="mt-4 font-gowunDodum">
+            <span className="text-sm">
+              (베드로)&nbsp;&nbsp;&nbsp;(데레사)
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(다윗)&nbsp;
+            </span>
+            <br />
             {husbandPrivateInfo.fatherName} · {husbandPrivateInfo.motherName}
             <span className="text-sm tracking-wide text-gray-600">
               {' '}
