@@ -9,9 +9,9 @@ const MapPage = () => {
   return (
     <>
       <div className="mb-4 text-center">
-        <h1 className="mt-5 font-italianno text-2xl font-thin">Map</h1>
+        <h1 className="mt-12 font-italianno text-2xl font-thin">Map</h1>
         <h2 className="font-gowunDodum text-2xl">오시는 길</h2>
-        <p className="mt-4 font-nanumMyeongjo text-lg">호텔PJ 1층 뮤즈홀</p>
+        <p className="mt-6 font-nanumMyeongjo text-lg">호텔PJ 1층 뮤즈홀</p>
         <p className="font-nanumMyeongjo text-base text-gray-500">
           서울 중구 마른내로 71
         </p>
@@ -19,17 +19,21 @@ const MapPage = () => {
 
       <PinnedKakaoMap />
       <div className="p-4">
-        <h3 className="font-gowunDodum text-xl text-orange-500">- 지하철</h3>
-        <p className="font-nanumMyeongjo text-lg">
+        <h3 className="mt-3 font-gowunDodum text-xl text-orange-500">
+          - 지하철
+        </h3>
+        <p className="mt-3 font-nanumMyeongjo">
           을지로4가역, 을지로3가역, 충무로역
           <br />
           <span className="text-sm">(도보 5분 소요)</span>
         </p>
-        <h3 className="mt-6 font-gowunDodum text-xl text-orange-500">
+        <h3 className="mt-10 font-gowunDodum text-xl text-orange-500">
           - 지도 앱으로 찾기
         </h3>
-        <p className="font-nanumMyeongjo">선호하시는 앱의 길찾기를 써보세요.</p>
-        <div className="my-3 flex justify-evenly font-gowunDodum text-sm">
+        <p className="mt-3 font-nanumMyeongjo">
+          선호하시는 앱의 길찾기를 써보세요.
+        </p>
+        <div className="my-3 mt-7 flex justify-evenly font-gowunDodum text-sm">
           <a
             href="https://naver.me/xXrn9Zw0"
             className="rounded-xl bg-gray-50 px-6 py-2"
@@ -52,10 +56,10 @@ const MapPage = () => {
             티맵
           </a>
         </div>
-        <h3 className="mt-6 font-gowunDodum text-xl text-orange-500">
+        <h3 className="mt-12 font-gowunDodum text-xl text-orange-500">
           - 주차 안내
         </h3>
-        <p className="font-nanumMyeongjo text-lg">
+        <p className="mt-3 font-nanumMyeongjo text-lg">
           <strong>PJ호텔 정문</strong>으로 오시면 호텔 직원이
           <br />
           <span className="mt-2 inline-block">

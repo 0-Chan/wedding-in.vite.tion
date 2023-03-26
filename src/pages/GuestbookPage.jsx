@@ -12,9 +12,9 @@ const GuestbookPage = () => {
   return (
     <>
       <div className="mb-4 text-center">
-        <h1 className="mt-5 font-italianno text-2xl font-thin">Message</h1>
+        <h1 className="mt-12 font-italianno text-2xl font-thin">Message</h1>
         <h2 className="font-gowunDodum text-2xl">메시지</h2>
-        <p className="mt-4 font-nanumMyeongjo text-lg">
+        <p className="mt-7 mb-8 font-nanumMyeongjo text-lg">
           청첩장을 받으신 분들께
           <br />
           먼저 감사의 말씀을 드립니다.
@@ -34,16 +34,12 @@ const GuestbookPage = () => {
       >
         {messageInfo[1].message}
       </GuestComment>
-      <GuestComment
-        writer="우유"
-        relationship="집 고양이"
-        date="23-03-24"
-      >
+      <GuestComment writer="우유" relationship="집 고양이" date="23-03-24">
         <img src={milkTheCat} className="inline-block w-32 rounded-md" />
         (메옹)
       </GuestComment>
 
-      <div className="mt-4">
+      <div className="mt-10">
         <Accordion title="📞 번호로 연락하기" open>
           <AccordionContent
             individual={'혼주 ' + husbandPrivateInfo.fatherName}

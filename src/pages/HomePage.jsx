@@ -42,23 +42,23 @@ const HomePage = () => {
     <>
       <GreetingConfetti />
       <div className="text-center">
-        <h1 className="mt-8 font-gowunDodum text-3xl">
+        <h1 className="mt-12 font-nanumMyeongjo text-3xl font-normal">
           신윤지
           <span className="mx-5 my-auto text-lg">&</span>
           김영찬
         </h1>
-        <div className="mx-4 drop-shadow-lg">
+        <div className="mx-4 mt-2 drop-shadow-lg">
           <img
             src={wavingHand}
             alt="윤지와 영찬이 손을 흔든다."
             className="mx-auto scale-90 rounded-lg"
           />
-          <p className="font-nanumMyeongjo text-xl leading-8">
+          <p className="mt-8 font-nanumMyeongjo text-xl leading-8">
             2023년 4월 15일(토) 1시 30분
             <br />
             호텔PJ 뮤즈홀
           </p>
-          <p className="mt-4 font-gowunDodum">
+          <p className="mt-12 font-gowunDodum">
             <span className="text-sm">
               <em className="">(베드로)</em>
               <em className="pl-3">(데레사)</em>
@@ -80,14 +80,14 @@ const HomePage = () => {
             신윤지
           </p>
         </div>
-        <img src={flower1} className="mx-auto h-20 w-28" />
+        <img src={flower1} className="mx-auto mt-6 mb-3 h-20 w-28" />
         {id ? <PersonalizedMessage /> : <InviteMessage />}
         <WeddingGallery />
         <div className="mt-8 font-gowunDodum text-xl">
           {remainDays}일 후에 만나요~!
         </div>
-        <img src={flower2} className="mx-auto h-20 w-28" />
-        <p className="font-nanumMyeongjo">
+        <img src={flower2} className="mx-auto mt-5 h-20 w-28" />
+        <p className="mt-5 mb-6 font-nanumMyeongjo">
           혹시 참석이 힘드신 분을 위해
           <br />
           염치 불고하고 계좌 번호를 남깁니다...

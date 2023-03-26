@@ -6,6 +6,7 @@ module.exports = {
       italianno: 'Italianno',
       nanumMyeongjo: 'Nanum Myeongjo',
       gowunDodum: 'Gowun Dodum',
+      nanumMyeongjo: 'Nanum Myeongjo',
     },
     extend: {
       colors: {
