@@ -65,6 +65,9 @@ const MapPage = () => {
           <span className="mt-2 inline-block">
             주차장 위치를 안내해드립니다!
           </span>
+          <span className="mt-2 inline-block">
+          * 하객 주차장는 <strong>을지트윈타워</strong>입니다.(2시간 무료주차)
+          </span>
         </p>
       </div>
       <Footer />
